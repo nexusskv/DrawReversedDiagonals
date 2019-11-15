@@ -44,7 +44,7 @@ import Foundation
  */
 
 
-let sourceArray = MatrixMaker.makeMatrix(10)                 // Make any matrix dynamycally
+let sourceArray = MatrixMaker.makeMatrix(5)                 // Make any matrix dynamycally
 
 print("Source matrix:")
 Printer.printArray(sourceArray)                             // Show source in console

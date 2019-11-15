@@ -34,14 +34,14 @@ class ResultsMaker {
                 var indexCount = n - 1
                 
                 for i in 1 ..< matrixSize - 1 {
+                    var nextIndex = i
+                    
                     var catetArray: [Int] = []
                     
                     let numbers = source[n]
                     if let first = numbers.first {
                         catetArray.append(first)
                     }
-
-                    var nextIndex = i
                     
                     while indexCount >= 0 && nextIndex < matrixSize {
                         let numbers = source[indexCount]
@@ -83,23 +83,4 @@ class ResultsMaker {
         
         return resultNumbers
     }
-    
-    /*
-    static func fillArray(_ catet: [Int], source: [[Int]], index: Int, next: Int, size: Int) -> [Int] {
-        var catetArray  = catet
-        var nextIndex   = next
-        var indexCount  = index
-        
-        while index >= 0 && next < size {
-            let numbers = source[index]
-            let number = numbers[next]
-            
-            catetArray.append(number)
-            
-            nextIndex += 1
-            indexCount -= 1
-        }
-        
-        return catetArray
-    }*/
 }
